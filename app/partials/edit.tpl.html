@@ -1,0 +1,29 @@
+<div class="md-card">
+    <form role="form" novalidate name="editForm">
+        <md-content>
+            <md-card>
+                <col-md-12>
+                    <md-card-title>
+                        <md-card-title-text>
+                            <span class="md-headline">Editing</span>
+                            <span class="md-subhead">{{vm.contact.first_name}} {{vm.contact.last_name}}</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                </col-md-12>
+                <div class="col-md-6">
+                    <md-input-container>
+                        <label>First Name </label>
+                        <input type='text' name='firstName' id='firstName' ng-model="vm.contact.first_name" class='form-control'>
+                    </md-input-container>
+                </div>
+                <div class="col-md-6">
+                    <md-input-container>
+                        <label>Last Name</label>
+                        <input type="text" name="lastName" id="lastName" ng-model="vm.contact.last_name" class="form-control">
+                    </md-input-container>
+                </div>
+            </md-card>
+        </md-content>
+    </form>
+</div>
+
